@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* SYNTAX Light Theme */
+:root, body.light-theme {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --border-color: #cbd5e1;
+  
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-hover: #2563eb;
+  --accent-blue-light: #eff6ff;
+  
+  --accent-teal: #0d9488;
+  --accent-teal-light: #ccfbf1;
+  --accent-lavender: #f3e8ff;
+  
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 18px -4px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.04);
+  --sidebar-bg: #f8fafc;
+}
+
+/* SYNTAX Dark Theme */
+body.dark-theme {
+  --bg-primary: #0d121e;
+  --bg-secondary: #070a13;
+  --bg-tertiary: #111726;
+  --border-color: #1e293b;
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  
+  --accent-blue: #3b82f6;
+  --accent-blue-hover: #2563eb;
+  --accent-blue-light: rgba(59, 130, 246, 0.15);
+  
+  --accent-teal: #2dd4bf;
+  --accent-teal-light: rgba(45, 212, 191, 0.15);
+  --accent-lavender: #3b0764;
+  
+  --card-bg: #0d121e;
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --sidebar-bg: #0d121e;
+}
+
+:root {
+  --accent-red: #ef4444;
+  --accent-yellow: #f59e0b;
+  
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  overflow: hidden;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+body.dark-theme ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-sans);
+  border: none;
+  outline: none;
+}
+
+input, textarea {
+  font-family: var(--font-sans);
+}
