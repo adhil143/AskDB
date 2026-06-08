@@ -126,6 +126,16 @@ This project demonstrates:
 
 ---
 
+## 📸 Application Preview
+
+| Sign In | Dashboard |
+|----------|----------|
+| ![](screenshots/sign_in.png) | ![](screenshots/dashboard.png) |
+
+| Query Output | Settings |
+|----------|----------|
+| ![](screenshots/query_output.png) | ![](screenshots/settings.png) |
+
 ## 🙌 Credits
 
 This project is based on the open-source work from:  
